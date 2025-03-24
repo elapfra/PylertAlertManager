@@ -1,10 +1,7 @@
-from requests.compat import urljoin
-from requests import HTTPError
 import requests
-import logging
-import json
-import maya
-from box import Box, BoxKeyError
+from requests import HTTPError
+from requests.compat import urljoin
+
 from .alert_objects import Alert, Silence
 
 
@@ -91,7 +88,7 @@ class AlertManager(object):
 
         """
         if req.status_code == requests.codes.ok:
-            return True        
+            return True
         else:
             raise HTTPError('{} ==> {}'.format(req.status_code, req.text))
 

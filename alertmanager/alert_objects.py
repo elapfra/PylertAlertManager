@@ -1,6 +1,7 @@
-import maya
-from box import Box, BoxKeyError
 import json
+
+import maya
+from box.box import Box
 
 
 class AlertObject(Box):
@@ -76,7 +77,7 @@ class AlertObject(Box):
         Set an endtime for the alert.
 
         Alert Manager has a default configuration for the amount of time an
-        Alert will persist beyond it's firing. This method allows us to
+        Alert will persist beyond its firing. This method allows us to
         specify the endsAt key with a datetime string in order to specify how
         long our alerts should persist beyond their first firing.
 

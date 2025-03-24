@@ -12,25 +12,25 @@ import os
 import sys
 from shutil import rmtree
 
-from setuptools import find_packages, setup, Command
+from setuptools import setup, Command
 
 # Package meta-data
 NAME = 'pylertalertmanager'
 # TODO: This F_NAME variable is not desireable. Either we need to change 
 # The package name, or make the library inside the package match 
 # the package name
-F_NAME = 'alertmanager' # Internal folder name
+F_NAME = 'alertmanager'  # Internal folder name
 DESCRIPTION = 'Library to ease interaction with Alert Manager API.'
 URL = 'https://github.com/ABORGT/PylertAlertManager.git'
 EMAIL = 'kamori.goat@gmail.com'
 AUTHOR = 'Tyler Coil'
 REQUIRES_PYTHON = '>=3.4.0'
-VERSION = None # Rely on alertmanager/__version__.py
+VERSION = None  # Rely on alertmanager/__version__.py
 PACKAGES = ['alertmanager']
 REQUIRED = [
-    'maya>=0.3.4',
-    'python-box>=3.1.1',
-    'requests>=2.20.0'
+    'maya>=0.6.1',
+    'python-box>=7.1.1',
+    'requests>=2.31.0'
 ]
 
 EXTRAS = {}
